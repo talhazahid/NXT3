@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+ <script src="js/mmenu-light.js"></script>
+
+ <link href="css/main.css" type="text/css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+ <title>NFT</title>
+</head>
+
+<body>
+
+
+
+
+
+
+ <a href="#mobile_menu" id="menuToggle">
+  <input type="checkbox" />
+  <span></span>
+  <span></span>
+  <span></span>
+ </a>
+
+
+
+ <nav id="mobile_menu">
+  <ul>
+   <li><a href="#/">Home</a></li>
+   <li><a href="#/">About</a></li>
+   <li><a href="#/">Roadmap</a></li>
+   <li><a href="#">Team</a></li>
+   <li><a href="#">Announcement</a></li>
+   <li><a href="#" class="mobile-wallet">Connect Wallet</a></li>
+  </ul>
+ </nav>
+
+
+
+ <div class="main-wrapper">
+
+  <header class="header">
+
+   <div class="header-row">
+    <div>
+     <img src="images/logo.svg">
+    </div>
+    <div id="d-menu">
+     <ul class="desktop-menu">
+      <li><a href="#home" class="menu-active">Home</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#case-studies">Case Studies</a></li>
+      <li><a href="#why-us">Why us</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#testimonial">Testimonial</a></li>
+      <li><a href="#contact-us" class="wallet-connect">Contact us</a></li>
+     </ul>
+    </div>
+   </div>
+
+  </header>
+
+
+
+
+
+
+
+
+
+ </div>
+
+
+
+ <script src="js/in-viewport-class.js"></script>
+
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="js/custom.js"></script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'>
+
+ </script>
+
+
+
+
+ <script>
+  AOS.init();
+
+  // You can also pass an optional settings object
+  // below listed default settings
+  AOS.init({
+   // Global settings:
+   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+   initClassName: 'aos-init', // class applied after initialization
+   animatedClassName: 'aos-animate', // class applied on animation
+   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+   debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+   throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+   offset: 120, // offset (in px) from the original trigger point
+   delay: 0, // values from 0 to 3000, with step 50ms
+   duration: 400, // values from 0 to 3000, with step 50ms
+   easing: 'ease', // default easing for AOS animations
+   once: false, // whether animation should happen only once - while scrolling down
+   mirror: false, // whether elements should animate out while scrolling past them
+   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+ </script>
+
+ <script>
+
+
+
+  const $bigBall = document.querySelector(".cursor__ball--big");
+  const $smallBall = document.querySelector(".cursor__ball--small");
+  const $hoverables = document.querySelectorAll(".hoverable");
+
+  // Listeners
+  document.body.addEventListener("mousemove", onMouseMove);
+  for (let i = 0; i < $hoverables.length; i++) {
+   if (window.CP.shouldStopExecution(0)) break;
+   $hoverables[i].addEventListener("mouseenter", onMouseHover);
+   $hoverables[i].addEventListener("mouseleave", onMouseHoverOut);
+  }
+
+  // Move the cursor
+  window.CP.exitedLoop(0); function onMouseMove(e) {
+   TweenMax.to($bigBall, 0.4, {
+    x: e.pageX - 15,
+    y: e.pageY - 15
+   });
+
+   TweenMax.to($smallBall, 0.1, {
+    x: e.pageX - 5,
+    y: e.pageY - 7
+   });
+
+  }
+
+  // Hover an element
+  function onMouseHover() {
+   TweenMax.to($bigBall, 0.3, {
+    scale: 4
+   });
+
+  }
+  function onMouseHoverOut() {
+   TweenMax.to($bigBall, 0.3, {
+    scale: 1
+   });
+
+  }
+ </script>
+</body>
+
+</html>
