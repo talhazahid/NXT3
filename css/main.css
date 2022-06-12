@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 html,
 body,
 div,
@@ -123,12 +124,12 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: #0a0d18;
+  background-color: #070707;
   color: white;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden; }
 
 .main-wrapper {
-  max-width: 2000px;
   margin: 0 auto; }
 
 :root {
@@ -137,14 +138,38 @@ body {
   --black: #1b1a1a;
   --light-gray: #979797; }
 
-.wallet-connect {
+.primary-cta {
   background: var(--primary);
-  color: white;
-  text-decoration: none; }
+  color: var(--black); }
 
 .primary-cta {
   background: var(--primary);
-  color: white; }
+  color: var(--black);
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 18px 64px;
+  border: 1px solid var(--primary);
+  transition: ease-in-out 150ms;
+  display: inline-block; }
+  .primary-cta:hover {
+    background: none;
+    color: white;
+    border: 1px solid var(--primary); }
+
+.outline-cta {
+  background: none;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 12px 15px;
+  border: 1px solid var(--primary);
+  transition: ease-in-out 150ms;
+  display: inline-block;
+  margin-top: 10px; }
+  .outline-cta:hover {
+    background: var(--primary);
+    color: white;
+    border: 1px solid var(--primary); }
 
 .header-row {
   display: flex;
@@ -158,9 +183,123 @@ ul.desktop-menu {
 .desktop-menu li a {
   color: var(--light-gray);
   text-decoration: none; }
+.desktop-menu .contact-cta {
+  background: var(--primary);
+  color: var(--black);
+  text-decoration: none;
+  padding: 10px 40px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 1px solid var(--primary);
+  transition: ease-in-out 150ms; }
+  .desktop-menu .contact-cta:hover {
+    background: none;
+    color: white;
+    border: 1px solid var(--primary); }
 
 #mobile_menu,
 #menuToggle {
   display: none; }
+
+section .section-wrapper {
+  max-width: 1400px;
+  margin: auto; }
+
+.we-do {
+  color: black;
+  display: table;
+  font-size: 32px;
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.hero-color {
+  color: #2dde7e; }
+
+.hero-heading {
+  font-size: 54px;
+  line-height: 75px;
+  text-shadow: 0px 4px 15px rgba(45, 222, 126, 0.65);
+  max-width: 580px;
+  margin-bottom: 40px;
+  font-weight: 700; }
+
+.hero-section {
+  position: relative; }
+  .hero-section::before {
+    position: absolute;
+    content: "";
+    background: url(../images/green-circle.png);
+    width: 100%;
+    height: 1600px;
+    display: block;
+    background-repeat: no-repeat;
+    top: -200px;
+    z-index: -1; }
+  .hero-section::after {
+    position: absolute;
+    content: "";
+    background: url(../images/x-bg.png);
+    z-index: -1;
+    width: 670px;
+    height: 1600px;
+    display: block;
+    background-repeat: no-repeat;
+    top: -100px;
+    right: 0px; }
+
+.heading-container h2 {
+  color: #ffffff;
+  text-shadow: 0px 4px 15px rgba(45, 222, 126, 0.65);
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+#expertise {
+  margin-top: 100px; }
+
+.center-para {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 850px;
+  margin: auto; }
+
+.expertise-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  margin-top: 60px;
+  grid-row-gap: 92px;
+  grid-column-gap: 55px;
+  width: 1200px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.expertise-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #393636;
+  padding: 55px 15px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  transition: ease-in-out 150ms; }
+  .expertise-column:hover {
+    background: #226c44; }
+  .expertise-column .outline-cta {
+    background: white;
+    color: var(--black); }
+
+.expert-icon {
+  position: absolute;
+  top: -40px; }
+
+.expert-cta-row {
+  margin-top: auto; }
 
 /*# sourceMappingURL=main.css.map */
