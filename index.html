@@ -103,35 +103,35 @@
 
     <div class="expertise-container">
      <div class="expertise-row">
-      <div class="expertise-column">
+      <div class="expertise-column" data-toggle="modal" data-target="#smart-contract">
        <div class="expert-icon"><img src="images/smart-contract.svg"></div>
        <div>Smart Contract Development
         (Solidity Development)</div>
        <div class="expert-cta-row"><a href="#" class="outline-cta">Learn More</a></div>
       </div>
-      <div class="expertise-column">
+      <div class="expertise-column" data-toggle="modal" data-target="#nft-webdesign">
        <div class="expert-icon"><img src="images/nft-web.svg"></div>
        <div>NFT Website Design
         and Development</div>
        <div class="expert-cta-row"><a href="#" class="outline-cta">Learn More</a></div>
       </div>
-      <div class="expertise-column">
+      <div class="expertise-column" data-toggle="modal" data-target="#community">
        <div class="expert-icon"><img src="images/community.svg"></div>
        <div>Community Management / Discord Moderation</div>
        <div class="expert-cta-row"><a href="#" class="outline-cta">Learn More</a></div>
       </div>
-      <div class="expertise-column">
-       <div class="expert-icon"><img src="images/smart-audits.svg"></div>
+      <div class="expertise-column" data-toggle="modal" data-target="#smart-audit">
+       <div class=" expert-icon"><img src="images/smart-audits.svg"></div>
        <div>Smart Contract Audits</div>
        <div class="expert-cta-row"><a href="#" class="outline-cta">Learn More</a></div>
       </div>
-      <div class="expertise-column">
-       <div class="expert-icon"><img src="images/nft-artwork.svg"></div>
+      <div class="expertise-column" data-target="#nft-artwork">
+       <div class=" expert-icon"><img src="images/nft-artwork.svg"></div>
        <div>NFT Artwork</div>
        <div class="expert-cta-row"><a href="#" class="outline-cta">Learn More</a></div>
       </div>
-      <div class="expertise-column">
-       <div class="expert-icon"><img src="images/infrastructure.svg"></div>
+      <div class="expertise-column" data-target="#infrastructure">
+       <div class=" expert-icon"><img src="images/infrastructure.svg"></div>
        <div>Infrastructure</div>
        <div class="expert-cta-row"><a href="#" class="outline-cta">Learn More</a></div>
       </div>
@@ -506,7 +506,7 @@
 
 
   <section id="contact">
-   <div>
+   <div class="contact-heading">
     <h2>Have an idea for an Blockchain project?</h2>
     <p>Let’s discuss it!
      You will receive a reply within 24 hours.</p>
@@ -526,7 +526,7 @@
 
 
     <div class="checkbox-row">
-     <div>checkbox</div>
+     <div><input type="checkbox"></div>
      <div>*As a result of submitting completed “Contact Us” form, your personal data will be processed by Unicsoft. We
       are committed to respecting your privacy. Read our Privacy Policy.</div>
     </div>
@@ -543,104 +543,180 @@
 
 
   <footer>
-   <div><img src="images/twitter-footer.svg"></div>
+   <div><a href="#" class="modal-trigger" data-modal="modal-name"><img src="images/twitter-footer.svg"></a></div>
    <div><a href="mailto:info@nxtweb3.com">info@nxtweb3.com</a></div>
-   <div><span>Powered by</span>: <span><img src="images/nxt-footer.svg"></span></div>
+   <div><span>Powered by</span>: <span><a href="https://www.nxtlabs.com/" target="_blank"><img
+       src="images/nxt-footer.svg"></a></span></div>
    <div>Copyright © 2022 NXTWEB3.</div>
   </footer>
 
- </div>
+
+
+  <div id="smart-contract" class="modal modal-lg">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <span class="modal-close">&times;</span>
+     <div class="modal-body">
+      <div>
+       <img src="images/smart-audits-popup.png" alt="Smart Contract">
+      </div>
+      <div class="modal-box">
+
+       <h3>Smart Contract Development (Solidity Development)</h3>
+
+       <p>
+        Get us to develop your smart contracts, be it on-chain or off-chain. Ethereum network or Solana – or on other
+        blockchains. We know them all. We appreciate some clients want whitelists and mint from mint pages only, whereas
+        others want minting from contracts. Contact us to discuss the best strategy for your project!
+       </p>
+
+       <div>
+        <a href="#" class="primary-cta">Contact Us</a>
+       </div>
+      </div>
+
+     </div>
+    </div>
+   </div>
 
 
 
- <script src="js/in-viewport-class.js"></script>
+
+   <!-- Aditional Styles -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
 
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script src="js/custom.js"></script>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'>
-
- </script>
+  </div>
 
 
 
+  <div id="nft-webdesign" class="modal modal-lg">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <span class="modal-close">&times;</span>
+     <div class="modal-body">
+      <div>
+       <img src="images/nft-web-popup.png" alt="Smart Contract">
+      </div>
+      <div class="modal-box">
 
- <script>
-  AOS.init();
+       <h3>NFT Website Design and Development</h3>
 
-  // You can also pass an optional settings object
-  // below listed default settings
-  AOS.init({
-   // Global settings:
-   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-   initClassName: 'aos-init', // class applied after initialization
-   animatedClassName: 'aos-animate', // class applied on animation
-   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-   debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-   throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+       <p>
+        We can design and develop your minting pages, as you see fit. We will adapt the design to work hand-in-hand with
+        your NFT designs and ensure the minting is as per your specifications
+       </p>
 
-
-   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-   offset: 120, // offset (in px) from the original trigger point
-   delay: 0, // values from 0 to 3000, with step 50ms
-   duration: 400, // values from 0 to 3000, with step 50ms
-   easing: 'ease', // default easing for AOS animations
-   once: false, // whether animation should happen only once - while scrolling down
-   mirror: false, // whether elements should animate out while scrolling past them
-   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-  });
- </script>
-
- <script>
+       <div>
+        <a href="#" class="primary-cta">Contact Us</a>
+       </div>
+      </div>
 
 
 
-  const $bigBall = document.querySelector(".cursor__ball--big");
-  const $smallBall = document.querySelector(".cursor__ball--small");
-  const $hoverables = document.querySelectorAll(".hoverable");
+     </div>
+    </div>
+   </div>
 
-  // Listeners
-  document.body.addEventListener("mousemove", onMouseMove);
-  for (let i = 0; i < $hoverables.length; i++) {
-   if (window.CP.shouldStopExecution(0)) break;
-   $hoverables[i].addEventListener("mouseenter", onMouseHover);
-   $hoverables[i].addEventListener("mouseleave", onMouseHoverOut);
-  }
 
-  // Move the cursor
-  window.CP.exitedLoop(0); function onMouseMove(e) {
-   TweenMax.to($bigBall, 0.4, {
-    x: e.pageX - 15,
-    y: e.pageY - 15
+
+
+   <!-- Aditional Styles -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+
+
+  </div>
+
+  <script src="js/in-viewport-class.js"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+   integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/custom.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'>
+
+  </script>
+
+
+
+
+  <script>
+   AOS.init();
+
+   // You can also pass an optional settings object
+   // below listed default settings
+   AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
    });
+  </script>
 
-   TweenMax.to($smallBall, 0.1, {
-    x: e.pageX - 5,
-    y: e.pageY - 7
-   });
+  <script>
 
-  }
 
-  // Hover an element
-  function onMouseHover() {
-   TweenMax.to($bigBall, 0.3, {
-    scale: 4
-   });
 
-  }
-  function onMouseHoverOut() {
-   TweenMax.to($bigBall, 0.3, {
-    scale: 1
-   });
+   const $bigBall = document.querySelector(".cursor__ball--big");
+   const $smallBall = document.querySelector(".cursor__ball--small");
+   const $hoverables = document.querySelectorAll(".hoverable");
 
-  }
- </script>
+   // Listeners
+   document.body.addEventListener("mousemove", onMouseMove);
+   for (let i = 0; i < $hoverables.length; i++) {
+    if (window.CP.shouldStopExecution(0)) break;
+    $hoverables[i].addEventListener("mouseenter", onMouseHover);
+    $hoverables[i].addEventListener("mouseleave", onMouseHoverOut);
+   }
+
+   // Move the cursor
+   window.CP.exitedLoop(0); function onMouseMove(e) {
+    TweenMax.to($bigBall, 0.4, {
+     x: e.pageX - 15,
+     y: e.pageY - 15
+    });
+
+    TweenMax.to($smallBall, 0.1, {
+     x: e.pageX - 5,
+     y: e.pageY - 7
+    });
+
+   }
+
+   // Hover an element
+   function onMouseHover() {
+    TweenMax.to($bigBall, 0.3, {
+     scale: 4
+    });
+
+   }
+   function onMouseHoverOut() {
+    TweenMax.to($bigBall, 0.3, {
+     scale: 1
+    });
+
+   }
+  </script>
 </body>
 
 </html>
