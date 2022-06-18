@@ -3,7 +3,6 @@
 $('.center').slick({
  centerMode: true,
  centerPadding: '60px',
- dots: true,
  variableWidth: true,
  slidesToShow: 4,
  responsive: [
