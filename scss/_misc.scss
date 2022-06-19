@@ -436,6 +436,7 @@ body.modal-active {
  font-size: 34px;
  top: 5px;
  cursor: pointer;
+ z-index: 10;
 }
 .modal-content,
 .modal-dialog {

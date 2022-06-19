@@ -323,11 +323,13 @@
 
 
    <div class="web3">
-    <div class="play-btn">
-     <img src="images/play-btn.svg">
-    </div>
-    <img src="images/video-web3.png" alt="what is web3">
+    <a href="#" data-toggle="modal" data-target="#web3-video">
+     <div class="play-btn">
+      <img src="images/play-btn.svg">
+     </div>
+     <img src="images/video-web3.png" alt="what is web3">
    </div>
+   </a>
   </section>
 
 
@@ -583,8 +585,7 @@
 
 
 
-   <!-- Aditional Styles -->
-   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
 
 
 
@@ -620,15 +621,32 @@
     </div>
    </div>
 
+  </div>
 
 
 
-   <!-- Aditional Styles -->
-   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
 
+  <div id="web3-video" class="modal modal-lg">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <span class="modal-close">&times;</span>
+
+
+     <video controls>
+      <source src="images/demo.mp4" type="video/mp4">
+     </video>
+
+
+
+
+
+    </div>
+   </div>
 
   </div>
+
+
 
   <script src="js/in-viewport-class.js"></script>
 
