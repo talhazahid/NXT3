@@ -758,6 +758,14 @@ footer {
 video {
   width: 100%; }
 
+.daniyal {
+  transform: scale(1.2);
+  position: relative;
+  top: -10px; }
+
+.designation {
+  color: #bdbdbd; }
+
 @media only screen and (max-width: 763px) {
   .modal .modal-body {
     display: flex;
