@@ -10,7 +10,9 @@
  <script src="js/mmenu-light.js"></script>
 
  <link href="css/main.css" type="text/css" rel="stylesheet">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
  <title>NFT</title>
 </head>
 
@@ -72,7 +74,8 @@
 
    <div class="section-wrapper">
     <div class="hero-content">
-     <div class="we-do">We do NFTS</div>
+     <div class="we-do" data-aos="fade-up">
+      We do NFTS</div>
      <div class="hero-heading">
       <span class="hero-color">NXT WEB3</span> is a full service, blue-chip NFT development
       partner.
@@ -434,6 +437,11 @@
       <a href="#"><img src="images/discord.svg"></a>
      </div>
     </div>
+   </div>
+
+
+   <div class="load-more-team">
+    <button class="primary-cta">Load More</button>
    </div>
   </section>
 
@@ -812,6 +820,10 @@
    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/custom.js"></script>
+
+  <script>
+   AOS.init();
+  </script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'>
 
   </script>

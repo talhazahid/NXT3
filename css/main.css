@@ -772,6 +772,11 @@ video {
   display: flex;
   justify-content: center; }
 
+.load-more-team {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center; }
+
 @media only screen and (max-width: 763px) {
   .modal .modal-body {
     display: flex;
