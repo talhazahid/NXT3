@@ -220,4 +220,17 @@ $('#d-menu li a').on('click', function () {
 });
 
 
+$(".show-team-member").hide();
+$(".load-team-btn").click(function () {
+ $(".show-team-member").slideToggle(100);
+ return false;
+});
 
+function myFunction() {
+ var x = document.getElementById("team-mem");
+ if (x.innerHTML === "Hello") {
+  x.innerHTML = "Load More";
+ } else {
+  x.innerHTML = "Hide Members";
+ }
+}

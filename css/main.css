@@ -228,7 +228,8 @@ section .section-wrapper {
   font-weight: 700; }
 
 .hero-section {
-  position: relative; }
+  position: relative;
+  margin-top: 50px; }
   .hero-section::before {
     position: absolute;
     content: "";
@@ -350,7 +351,11 @@ section .section-wrapper {
   display: flex;
   flex-direction: column;
   border: 1px solid #484848;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transform: scale(1);
+  transition: ease-in-out 300ms; }
+  .work-col:hover {
+    transform: scale(1.03); }
 
 .work-box {
   background: #221f1f;
@@ -775,7 +780,11 @@ video {
 .load-more-team {
   margin: 40px auto;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
+
+.show-team-member {
+  display: flex; }
 
 @media only screen and (max-width: 763px) {
   .modal .modal-body {
