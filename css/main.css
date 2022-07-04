@@ -786,6 +786,10 @@ video {
 .show-team-member {
   display: flex; }
 
+input,
+textarea {
+  color: white; }
+
 @media only screen and (max-width: 763px) {
   .modal .modal-body {
     display: flex;
